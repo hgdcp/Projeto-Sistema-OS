@@ -15,14 +15,14 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         Desktop = new javax.swing.JDesktopPane();
-        jLabel1 = new javax.swing.JLabel();
+        lblFotSis = new javax.swing.JLabel();
         lblUsuario = new javax.swing.JLabel();
         lblData = new javax.swing.JLabel();
         Menu = new javax.swing.JMenuBar();
         menCad = new javax.swing.JMenu();
-        menCadCli = new javax.swing.JMenuItem();
+        MenCadCli = new javax.swing.JMenuItem();
         MenCadOs = new javax.swing.JMenuItem();
-        menCadUsu = new javax.swing.JMenuItem();
+        MenCadUsu = new javax.swing.JMenuItem();
         MenRel = new javax.swing.JMenu();
         MenRelSer = new javax.swing.JMenuItem();
         MenAju = new javax.swing.JMenu();
@@ -50,7 +50,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
             .addGap(0, 480, Short.MAX_VALUE)
         );
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/infox/icones/letra-x-240.jpg"))); // NOI18N
+        lblFotSis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/infox/icones/letra-x-240.jpg"))); // NOI18N
 
         lblUsuario.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lblUsuario.setText("Usuário");
@@ -60,18 +60,23 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         menCad.setText("Cadastro");
 
-        menCadCli.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.ALT_MASK));
-        menCadCli.setText("Cliente");
-        menCad.add(menCadCli);
+        MenCadCli.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.ALT_MASK));
+        MenCadCli.setText("Cliente");
+        menCad.add(MenCadCli);
 
         MenCadOs.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.ALT_MASK));
         MenCadOs.setText("OS");
         menCad.add(MenCadOs);
 
-        menCadUsu.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.ALT_MASK));
-        menCadUsu.setText("Usuários");
-        menCadUsu.setEnabled(false);
-        menCad.add(menCadUsu);
+        MenCadUsu.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.ALT_MASK));
+        MenCadUsu.setText("Usuários");
+        MenCadUsu.setEnabled(false);
+        MenCadUsu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenCadUsuActionPerformed(evt);
+            }
+        });
+        menCad.add(MenCadUsu);
 
         Menu.add(menCad);
 
@@ -121,10 +126,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 .addComponent(Desktop, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
+                    .addComponent(lblFotSis)
                     .addComponent(lblUsuario)
                     .addComponent(lblData))
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -139,7 +144,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
                         .addGap(34, 34, 34)
                         .addComponent(lblData)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel1)))
+                        .addComponent(lblFotSis)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -167,6 +172,13 @@ public class TelaPrincipal extends javax.swing.JFrame {
         TelaSobre sobre = new TelaSobre();
         sobre.setVisible(true);
     }//GEN-LAST:event_MenAjuSobActionPerformed
+
+    private void MenCadUsuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenCadUsuActionPerformed
+        // as linhas abaixo vão abrir o form TelaUsuario dentro do desktop pane
+        TelaUsuario usuario = new TelaUsuario();
+        usuario.setVisible(true);
+        Desktop.add(usuario);
+    }//GEN-LAST:event_MenCadUsuActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -204,17 +216,17 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JDesktopPane Desktop;
     private javax.swing.JMenu MenAju;
     private javax.swing.JMenuItem MenAjuSob;
+    private javax.swing.JMenuItem MenCadCli;
     private javax.swing.JMenuItem MenCadOs;
+    public static javax.swing.JMenuItem MenCadUsu;
     private javax.swing.JMenu MenOpc;
     private javax.swing.JMenuItem MenOpcSai;
     public static javax.swing.JMenu MenRel;
     private javax.swing.JMenuItem MenRelSer;
     private javax.swing.JMenuBar Menu;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblData;
-    private javax.swing.JLabel lblUsuario;
+    private javax.swing.JLabel lblFotSis;
+    public static javax.swing.JLabel lblUsuario;
     private javax.swing.JMenu menCad;
-    private javax.swing.JMenuItem menCadCli;
-    public static javax.swing.JMenuItem menCadUsu;
     // End of variables declaration//GEN-END:variables
 }
