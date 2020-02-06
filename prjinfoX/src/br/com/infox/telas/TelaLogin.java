@@ -6,11 +6,16 @@ import java.awt.Color;
 import javax.swing.JOptionPane;
 
 public class TelaLogin extends javax.swing.JFrame {
-
+    
+    // usando a variável de conexão do DAL
     Connection conexao = null;
+    
+    // criando variáveis especiais para conexão com o banco
+    // Prepared Statement e ResultSet são frameworks do pacote java.sql e servem para preparar e executar as instruções SQL
     PreparedStatement pst = null;
     ResultSet rs = null;
 
+    // criando método logar
     public void logar() {
         String sql = "select * from tbusuarios where login=? and senha=?";
         try {
