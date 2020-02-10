@@ -143,7 +143,7 @@ public class TelaLogin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
-        // chamando o método logar
+        // chamando o método logar (clique do mouse)
         logar();
     }//GEN-LAST:event_btnLoginActionPerformed
 
