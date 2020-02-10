@@ -37,10 +37,10 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="infNome" min="-2" max="-2" attributes="0"/>
-                          <Component id="infId" min="-2" max="-2" attributes="0"/>
-                          <Component id="infFone" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="infLogin" min="-2" max="-2" attributes="0"/>
+                          <Component id="infUsuNome" min="-2" max="-2" attributes="0"/>
+                          <Component id="infUsuId" min="-2" max="-2" attributes="0"/>
+                          <Component id="infUsuFone" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="infUsuLogin" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
@@ -50,12 +50,12 @@
                                       <Group type="102" attributes="0">
                                           <Component id="txtUsuLogin" min="-2" pref="137" max="-2" attributes="0"/>
                                           <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="infPerfil" min="-2" max="-2" attributes="0"/>
+                                          <Component id="infUsuPerfil" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" attributes="0">
                                           <Component id="txtUsuFone" min="-2" pref="137" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
-                                          <Component id="infSenha" min="-2" max="-2" attributes="0"/>
+                                          <Component id="infUsuSenha" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
@@ -100,37 +100,35 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="infId" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="infUsuId" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtUsuId" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="infCamObr" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="infNome" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="infUsuNome" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtUsuNome" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="txtUsuSenha" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="infSenha" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="infUsuSenha" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtUsuFone" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="infFone" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="infUsuFone" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="infPerfil" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="infUsuPerfil" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="cboUsuPerfil" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtUsuLogin" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="infLogin" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="infUsuLogin" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="btnUsuRead" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="btnUsuUpdate" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="btnUsuCreate" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="btnUsuDelete" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
-                  </Group>
+                  <Component id="btnUsuDelete" linkSize="2" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnUsuCreate" linkSize="2" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="59" max="32767" attributes="0"/>
           </Group>
@@ -138,27 +136,27 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="infId">
+    <Component class="javax.swing.JLabel" name="infUsuId">
       <Properties>
         <Property name="text" type="java.lang.String" value="ID*:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="infNome">
+    <Component class="javax.swing.JLabel" name="infUsuNome">
       <Properties>
         <Property name="text" type="java.lang.String" value="Nome*:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="infLogin">
+    <Component class="javax.swing.JLabel" name="infUsuLogin">
       <Properties>
         <Property name="text" type="java.lang.String" value="Login*:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="infSenha">
+    <Component class="javax.swing.JLabel" name="infUsuSenha">
       <Properties>
         <Property name="text" type="java.lang.String" value="Senha*:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="infPerfil">
+    <Component class="javax.swing.JLabel" name="infUsuPerfil">
       <Properties>
         <Property name="text" type="java.lang.String" value="Perfil*:"/>
       </Properties>
@@ -166,9 +164,6 @@
     <Component class="javax.swing.JTextField" name="txtUsuId">
     </Component>
     <Component class="javax.swing.JTextField" name="txtUsuNome">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtUsuNomeActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txtUsuLogin">
     </Component>
@@ -187,7 +182,7 @@
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JLabel" name="infFone">
+    <Component class="javax.swing.JLabel" name="infUsuFone">
       <Properties>
         <Property name="text" type="java.lang.String" value="Fone:"/>
       </Properties>
