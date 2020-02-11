@@ -181,7 +181,7 @@ public class TelaUsuario extends javax.swing.JInternalFrame {
         infUsuFone.setText("Fone:");
 
         btnUsuCreate.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/infox/icones/file_add-64px.png"))); // NOI18N
-        btnUsuCreate.setToolTipText("Adicionar");
+        btnUsuCreate.setToolTipText("Adicionar Usuário");
         btnUsuCreate.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnUsuCreate.setPreferredSize(new java.awt.Dimension(80, 80));
         btnUsuCreate.addActionListener(new java.awt.event.ActionListener() {
@@ -191,7 +191,7 @@ public class TelaUsuario extends javax.swing.JInternalFrame {
         });
 
         btnUsuRead.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/infox/icones/file_search-64px.png"))); // NOI18N
-        btnUsuRead.setToolTipText("Consultar");
+        btnUsuRead.setToolTipText("Consultar Usuário");
         btnUsuRead.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnUsuRead.setPreferredSize(new java.awt.Dimension(80, 80));
         btnUsuRead.addActionListener(new java.awt.event.ActionListener() {
@@ -201,7 +201,7 @@ public class TelaUsuario extends javax.swing.JInternalFrame {
         });
 
         btnUsuUpdate.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/infox/icones/file_edit-64px.png"))); // NOI18N
-        btnUsuUpdate.setToolTipText("Alterar");
+        btnUsuUpdate.setToolTipText("Alterar Usuário");
         btnUsuUpdate.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnUsuUpdate.setPreferredSize(new java.awt.Dimension(80, 80));
         btnUsuUpdate.addActionListener(new java.awt.event.ActionListener() {
@@ -211,7 +211,7 @@ public class TelaUsuario extends javax.swing.JInternalFrame {
         });
 
         btnUsuDelete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/infox/icones/file_delete-64px.png"))); // NOI18N
-        btnUsuDelete.setToolTipText("Deletar");
+        btnUsuDelete.setToolTipText("Deletar Usuário");
         btnUsuDelete.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnUsuDelete.setPreferredSize(new java.awt.Dimension(80, 80));
         btnUsuDelete.addActionListener(new java.awt.event.ActionListener() {
