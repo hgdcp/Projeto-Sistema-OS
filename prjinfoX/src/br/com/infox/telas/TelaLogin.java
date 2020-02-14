@@ -2,6 +2,7 @@ package br.com.infox.telas;
 
 import java.sql.*;
 import br.com.infox.dal.ModuloConexao;
+import br.com.infox.utilitario.UtilitarioIcone;
 import java.awt.Color;
 import javax.swing.JOptionPane;
 
@@ -61,6 +62,10 @@ public class TelaLogin extends javax.swing.JFrame {
 
     public TelaLogin() {
         initComponents();
+        // os comandos UtilitárioIcone se refere ao ícone do sistema disponível nessa tela
+        UtilitarioIcone icone = new UtilitarioIcone();
+        icone.InserirIcone(this);
+        
         conexao = ModuloConexao.conector();
         // a linha abaixo serve de apoio ao status da conexão
         //System.out.println(conexao);

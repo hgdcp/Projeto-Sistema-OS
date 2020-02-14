@@ -1,0 +1,4 @@
+Mudanças da Versão 1.1
+
+- Adição da classe que Utilitários que contém a função de exibição do ícone nas telas
+de login e na tela principal.

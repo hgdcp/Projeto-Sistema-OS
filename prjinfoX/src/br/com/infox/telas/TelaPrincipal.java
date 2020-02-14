@@ -1,6 +1,7 @@
 package br.com.infox.telas;
 
 import br.com.infox.dal.ModuloConexao;
+import br.com.infox.utilitario.UtilitarioIcone;
 import java.text.DateFormat;
 import java.util.Date;
 import javax.swing.JOptionPane;
@@ -15,6 +16,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
     
     public TelaPrincipal() {
         initComponents();
+        // os comandos UtilitárioIcone se refere ao ícone do sistema disponível nessa tela
+        UtilitarioIcone icone = new UtilitarioIcone();
+        icone.InserirIcone(this);
+        
         conexao = ModuloConexao.conector();
     }
 
